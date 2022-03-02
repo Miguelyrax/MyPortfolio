@@ -7,22 +7,36 @@ import { Card } from "../componets/Card";
 import { Button } from "../componets/Button";
 import { Skill } from "../componets/Skill";
 import { Navigate } from "../componets/Navigate";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Content } from '../componets/Content';
-
+import emailjs from '@emailjs/browser';
+import React from "react";
+interface Formulario {
+  from_name: string,
+  message_html: string,
+  reply_to: string 
+}
 
 export const HomeScreen = () => {
   const [select, setSelect] = useState(0);
-
+  const form = React.useRef();
+  const sendEmail = (e:React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+const valuye=e.currentTarget;
+    emailjs.sendForm('service_f4os8f4', 'template_zckwf1q', valuye, 'V8zBxj5o1ViufeZkc')
+      .then((result) => {
+      
+      }, (error) => {
+    
+      });
+  };
   const next = ()=>{
     if(select==contents.length-1){
       return;
     }
-    console.log('pintado');
     setSelect(select+1);
   } 
   const back = ()=>{
-    console.log('pintado');
     if(select==0){
       return;
     }
@@ -109,7 +123,9 @@ export const HomeScreen = () => {
             <div className="about">
               <h1 className="color-red">Sobre mi</h1>
               <h2 className="color-blue lh-sm">Soy un ingeniero en informática que se esfuerza cada día para aprender nuevas herramientas y dar la satisfacción que el cliente necesita.Soy capaz de asumir con las responsabilidades que el trabajo amerita, disfrutando cada momento en el entorno laboral para poder superarme y ser un mejor profesional.</h2>
-            <Button title="Descargar CV" onPressed={()=>{}}/>
+            <Button title="Descargar CV" onPressed={()=>{
+              window.open('assets/miguel.pdf', '_blank');
+            }}/>
             <DownScroll title="Skills" to="#skills" obscure={true}/>  
             </div>
             
@@ -190,10 +206,13 @@ export const HomeScreen = () => {
                   <h1 className="cartas color-blue center weight-500 w-full text-align-center ">Escribeme y conoceme</h1>
                   <div className="column cross-alignment-start w-full">
                     <h1 className="color-red color">Contacto</h1>
-                    <input type="text" placeholder="Nombre" />
-                    <input type="text" placeholder="Email" />
-                    <input type="text" placeholder="Mensaje" />
-                    <Button title="Enviar Email" onPressed={()=>{}}/>
+                    <form onSubmit={sendEmail}>
+
+                    <input type="text" placeholder="Nombre" name="user_name"  />
+                    <input type="text" placeholder="Email" name="user_email" />
+                    <input type="text" placeholder="Mensaje" name="message" />
+                    <Button title="Enviar" onPressed={()=>{}}/>
+                    </form>
                   </div>
                 </div>
               </div>
