@@ -11,10 +11,10 @@ export const NavBar = () => {
             <h2 className="color-red pointer">Home</h2>
         </div>
         <ul className="cartas">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#proyectos">Works</a>
-            <a href="#skills">Contact</a>
+            <a href="#about">Sobre mi</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#proyectos">Portafolio</a>
+            <a href="#contact">Contacto</a>
         </ul>
     </nav>
   )

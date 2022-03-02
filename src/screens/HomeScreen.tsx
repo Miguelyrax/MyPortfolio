@@ -34,6 +34,14 @@ export const HomeScreen = () => {
   const lista4:string[]=['React.js','Node.js','CSS','Html','Express']
   const lista5:string[]=['Flutter','Dart','Node.js','Express','Javascript']
   const lista6:string[]=['Flutter','Dart']
+  const listImage:string[]=[
+    'assets/portfolio/gjoob.png',
+    'assets/portfolio/portfolio.png',
+    'assets/portfolio/puzzle.png',
+    'assets/portfolio/react.jpeg',
+    'assets/portfolio/master.png',
+    'assets/portfolio/swiper.png',
+  ]
   const contents:JSX.Element[]=[ <Content
     link="https://github.com/Miguelyrax/GJoob"
     chips={lista}
@@ -95,12 +103,12 @@ export const HomeScreen = () => {
                 <Malla color={"#d44539"}/>
               </div>
               <div className="absolute-1">
-                <Card url={"https://media.istockphoto.com/photos/girl-jumping-in-the-sunset-picture-id517249689?k=20&m=517249689&s=170667a&w=0&h=3YIfofTAUqhS0b3Y6ajfhuyfBhsRcF5i6mgpx8f-TPQ="} left={false}/>
+                <Card url={"assets/perfil.png"} left={false}/>
               </div>
             </div>
             <div className="about">
               <h1 className="color-red">Sobre mi</h1>
-              <h2 className="color-blue lh-sm">Soy un estudiante en ingeniería en informática que se esfuerza cada día para aprender nuevas herramientas y dar la satisfacción que el cliente necesita.Soy capaz de asumir con las responsabilidades que el trabajo amerita, disfrutando cada momento en el entorno laboral para poder superarme y ser un mejor profesional.</h2>
+              <h2 className="color-blue lh-sm">Soy un ingeniero en informática que se esfuerza cada día para aprender nuevas herramientas y dar la satisfacción que el cliente necesita.Soy capaz de asumir con las responsabilidades que el trabajo amerita, disfrutando cada momento en el entorno laboral para poder superarme y ser un mejor profesional.</h2>
             <Button title="Descargar CV" onPressed={()=>{}}/>
             <DownScroll title="Skills" to="#skills" obscure={true}/>  
             </div>
@@ -113,7 +121,7 @@ export const HomeScreen = () => {
         <div className="padding-horizontal column ">
           <div className="row main-alignment-bettween">
               <div className="skills">
-                <h1 className="color-red">Skills</h1>
+                <h1 className="color-red">Habilidades</h1>
                 <h2 className="color-blue lh-sm">Esta es la gama de habilidades que poseo y que sigo estudiando día a día</h2>
                 <div className="wrap gap-sm center ">
                 <Skill shortName="Dart" title="Dart"/>
@@ -133,7 +141,7 @@ export const HomeScreen = () => {
                 <Malla color={"#040f28"}/>
               </div>
               <div className="  position-card index ">
-                <Card url={"https://media.istockphoto.com/photos/girl-jumping-in-the-sunset-picture-id517249689?k=20&m=517249689&s=170667a&w=0&h=3YIfofTAUqhS0b3Y6ajfhuyfBhsRcF5i6mgpx8f-TPQ="} left={true}/>
+                <Card url={"assets/code.jpeg"} left={true}/>
               </div>
               
             </div>
@@ -152,7 +160,7 @@ export const HomeScreen = () => {
                 <Malla color={"#9980FA"}/>
               </div>
               <div className="absolute-1">
-                <Card url={"https://media.istockphoto.com/photos/girl-jumping-in-the-sunset-picture-id517249689?k=20&m=517249689&s=170667a&w=0&h=3YIfofTAUqhS0b3Y6ajfhuyfBhsRcF5i6mgpx8f-TPQ="} left={false}/>
+                <Card url={listImage[select]} left={false} height={"700px"} width={"400px"}/>
               </div>
             </div>
             <div className="about w-full ">
@@ -174,7 +182,7 @@ export const HomeScreen = () => {
           
         </div>
       </section>
-      <section className="py-xl  contact-bg ">
+      <section className="py-xl  contact-bg " id="contact">
         <div className="column ">
           <div className="contact pl-md pr-md padding-vertical  ">
               <div className="container bg-white ">

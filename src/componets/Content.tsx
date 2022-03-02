@@ -10,7 +10,7 @@ interface Content{
 export const Content = (props:Content) => {
   return (
     <>
-    <h1 className="color-red">Proyectos</h1>
+    <h1 className="color-red">Portafolio</h1>
     <h2 className="color-red weight-500">{props.title}</h2>
     <h2 className="color-blue lh-sm">{props.content}</h2>
   
