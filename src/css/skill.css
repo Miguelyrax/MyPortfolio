@@ -1,0 +1,7 @@
+.circular-skill{
+    width: 70px;
+    height: 70px;
+    color: black;
+    border: 15px solid #040f28;
+    border-radius: 100%;
+}

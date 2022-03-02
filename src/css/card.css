@@ -1,0 +1,27 @@
+
+.card{
+    width: 450px;
+    height: 600px;
+    background-color: black;
+    transform: perspective( 600px ) rotateY( 10deg );
+}
+.card-left{
+    width: 450px;
+    height: 600px;
+    background-color: black;
+    transform: perspective( 600px ) rotateY( -10deg );
+}
+.card img{
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+
+}
+.card-left img{
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+
+}

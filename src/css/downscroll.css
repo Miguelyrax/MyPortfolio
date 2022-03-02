@@ -1,0 +1,12 @@
+.circular{
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    margin-right: 8px;
+}
+.b1{
+    border: 2px solid #8e8996; 
+}
+.b2{
+    border: 2px solid #040f28;
+}
