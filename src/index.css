@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #040f28;
-  background: url("../public/assets/home4.png") no-repeat center top;
+  background: url("https://res.cloudinary.com/miguelyrax/image/upload/v1646270097/home4_wtszba.png") no-repeat center top;
   background-size: cover; 
   background-position: top; 
   min-height: 1080px;
@@ -266,26 +266,26 @@ right: 0;
  }
 
  .footer{
-   background-image: url("../public/assets/footer.png");
+   background-image: url("https://res.cloudinary.com/miguelyrax/image/upload/v1646270097/footer_dmkwnx.png");
    background-size: 100% 100%;
     background-repeat:no-repeat;
     background-size: cover;
  }
  .contact-bg{
-   background-image: url("../public/assets/contact2.png");
+   background-image: url("https://res.cloudinary.com/miguelyrax/image/upload/v1646270097/contact2_s1d2k2.png");
    background-size: 100% 100%;
     background-repeat:no-repeat;
     background-size: cover;
  }
  .pintura-right{
-   background-image: url("../public/assets/right.png") ;
+   background-image: url("https://res.cloudinary.com/miguelyrax/image/upload/v1646270097/right_cwn9cf.png") ;
    background-size: 100% 100%;
     background-repeat:no-repeat;
     background-size: contain;
     background-position: right;
  }
  .pintura-left{
-   background-image: url("../public/assets/left.png") ;
+   background-image: url("https://res.cloudinary.com/miguelyrax/image/upload/v1646270097/left_jx621c.png") ;
    background-size: 100% 100%;
     background-repeat:no-repeat;
     background-size: contain;
@@ -296,7 +296,7 @@ right: 0;
  }
  @media only screen and (max-width: 1090px) {
   body {
-    background: url("../public/assets/homesm.png") no-repeat center top;
+    background: url("https://res.cloudinary.com/miguelyrax/image/upload/v1646270097/homesm_bjvmpg.png") no-repeat center top;
     background-size: cover; 
     background-position: top; 
     min-height: 1080px;
