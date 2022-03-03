@@ -123,8 +123,9 @@ const valuye=e.currentTarget;
             <div className="about">
               <h1 className="color-red">Sobre mi</h1>
               <h2 className="color-blue lh-sm">Soy un ingeniero en informática que se esfuerza cada día para aprender nuevas herramientas y dar la satisfacción que el cliente necesita.Soy capaz de asumir con las responsabilidades que el trabajo amerita, disfrutando cada momento en el entorno laboral para poder superarme y ser un mejor profesional.</h2>
-            
-            <a href='https://miguelyrax.github.io/MyPortfolio/assets/Miguel.pdf' download><Button title="Descargar CV" onPressed={()=>{}}/></a>
+            <Button title="Descargar CV" onPressed={()=>{
+              window.open('https://miguelyrax.github.io/MyPortfolio/assets/Miguel.pdf', '_blank');
+            }}/>
             <DownScroll title="Skills" to="#skills" obscure={true}/>  
             </div>
             
