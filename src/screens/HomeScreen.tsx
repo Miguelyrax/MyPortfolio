@@ -123,9 +123,8 @@ const valuye=e.currentTarget;
             <div className="about">
               <h1 className="color-red">Sobre mi</h1>
               <h2 className="color-blue lh-sm">Soy un ingeniero en informática que se esfuerza cada día para aprender nuevas herramientas y dar la satisfacción que el cliente necesita.Soy capaz de asumir con las responsabilidades que el trabajo amerita, disfrutando cada momento en el entorno laboral para poder superarme y ser un mejor profesional.</h2>
-            <Button title="Descargar CV" onPressed={()=>{
-              window.open('assets/miguel.pdf', '_blank');
-            }}/>
+            
+            <a href='assets/miguel.pdf' download><Button title="Descargar CV" onPressed={()=>{}}/></a>
             <DownScroll title="Skills" to="#skills" obscure={true}/>  
             </div>
             
